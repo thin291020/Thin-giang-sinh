@@ -95,13 +95,12 @@
     imgLight.src = 'light.png';
     
     function draw() {
-        console.log(imgTree.height);
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.drawImage(imgTree, 0, canvas.height - imgTree.height / 4 + 50, 500, 550);
         ctx.drawImage(imgLight, canvas.width - imgLight.width/3, 0, imgLight.width/4, imgLight.height/4);
         // ctx.fontFamily = 'Segoe UI, sans-serif';
         ctx.font = '48px Segoe UI, sans-serif';
-        ctx.fillText('Vũ Đăng Thìn', 500, 350);
+        ctx.fillText('From Vũ Đăng Thìn', 500, 350);
         ctx.fillText('Wish you all a Merry Christmas!', 500, 450);
         for(var i = 0; i < snows.length; i++) {
             snows[i].update();
